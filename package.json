@@ -1,0 +1,20 @@
+{
+  "name": "float-head",
+  "version": "0.0.0",
+  "description": "Float table heads when they get to the top of the page",
+  "keywords": [],
+  "dependencies": {},
+  "peerDependencies": {
+    "jquery": ">= 1.8.0"
+  },
+  "devDependencies": {
+    "request": "~2.33.0",
+    "jquery": ">= 1.8.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/float-head.git"
+  },
+  "license": "CC BY-SA 4.0"
+}
