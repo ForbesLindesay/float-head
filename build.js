@@ -30,11 +30,14 @@ var postfix = '\n' + [
   '};'
 ].join('\n');
 
-request('https://raw2.github.com/mkoryak/floatThead/v1.2.1/jquery.floatThead.js',
+request('https://raw2.github.com/mkoryak/floatThead/v' + process.argv[2] + '/jquery.floatThead.js',
   function (err, res) {
     if (err) throw err;
     if (res.statusCode !== 200) throw new Error('status code: ' + res.statusCode);
     var src = res.body;
     src = prefix + src.replace(/^/gm, '  ') + postfix;
     fs.writeFileSync(__dirname + '/lib/float-head.js', src);
+    var pkg = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8'));
+    pkg['floatThead-version'] = process.argv[2];
+    fs.writeFileSync(__dirname + '/package.json', JSON.stringify(pkg, null, '  '));
   });

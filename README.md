@@ -58,6 +58,10 @@ Triggers a reflow of the selected table.  This is likely to be necessary after a
 
 Calling this stops the header from continuing to float.
 
+## Updating
+
+To create an updated build, simply clone this repo then run `node build 1.2.2` where (`1.2.2` is replaced witht the desired version of floatThead).
+
 ## License
 
 Built on top of [floatThead](https://github.com/mkoryak/floatThead) by [@mkoryak](https://github.com/mkoryak)
