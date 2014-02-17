@@ -5,7 +5,8 @@ var request = require('request');
 
 var prefix = [
   '// !!auto-generated file, do not edit!!',
-  'module.exports = function (jQuery, _) {'
+  'module.exports = function (jQuery) {',
+  '  var $ = jQuery;'
 ].join('\n') + '\n';
 var postfix = '\n' + [
   '  function wrap(table) {',
@@ -30,7 +31,7 @@ var postfix = '\n' + [
   '};'
 ].join('\n');
 
-request('https://raw2.github.com/mkoryak/floatThead/v' + process.argv[2] + '/jquery.floatThead.js',
+request('https://raw2.github.com/mkoryak/floatThead/v' + process.argv[2] + '/dist/jquery.floatThead.js',
   function (err, res) {
     if (err) throw err;
     if (res.statusCode !== 200) throw new Error('status code: ' + res.statusCode);
