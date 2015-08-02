@@ -31,7 +31,7 @@ var postfix = '\n' + [
   '};'
 ].join('\n');
 
-request('https://raw2.github.com/mkoryak/floatThead/v' + process.argv[2] + '/dist/jquery.floatThead.js',
+request('https://cdnjs.cloudflare.com/ajax/libs/floatthead/' + process.argv[2] + '/jquery.floatThead.js',
   function (err, res) {
     if (err) throw err;
     if (res.statusCode !== 200) throw new Error('status code: ' + res.statusCode);
