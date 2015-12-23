@@ -3,8 +3,8 @@
 Float table heads when they get to the top of the page.  Built on top of [https://github.com/mkoryak/floatThead](https://github.com/mkoryak/floatThead) but made suitable for browserifying.
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/float-head/master.svg)](https://travis-ci.org/ForbesLindesay/float-head)
-[![Dependency Status](https://img.shields.io/gemnasium/ForbesLindesay/float-head.svg)](https://gemnasium.com/ForbesLindesay/float-head)
-[![NPM version](https://img.shields.io/npm/v/float-head.svg)](http://badge.fury.io/js/float-head)
+[![Dependency Status](https://img.shields.io/david/ForbesLindesay/float-head.svg)](https://david-dm.org/ForbesLindesay/float-head)
+[![NPM version](https://img.shields.io/npm/v/float-head.svg)](https://www.npmjs.com/package/float-head)
 
 ## Installation
 
