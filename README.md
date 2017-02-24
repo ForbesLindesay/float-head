@@ -1,5 +1,7 @@
 # float-head
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/float-head.svg)](https://greenkeeper.io/)
+
 Float table heads when they get to the top of the page.  Built on top of [https://github.com/mkoryak/floatThead](https://github.com/mkoryak/floatThead) but made suitable for browserifying.
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/float-head/master.svg)](https://travis-ci.org/ForbesLindesay/float-head)
